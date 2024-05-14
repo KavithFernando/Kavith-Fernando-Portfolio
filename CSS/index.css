@@ -10,11 +10,12 @@ nav {
     width: auto;
     background-color: #1F242B;
     color: white;
-    padding: 20px 100px;
+    padding: 20px 10%;
 
     /* ------------------------------------------------ */
     h3 {
         font-size: 30px;
+        letter-spacing: 2px;
     }
 
     /* ------------------------------------------------ */
@@ -24,8 +25,34 @@ nav {
         align-items: center;
         
         /* -------------------------------------------- */
-        li {
-            margin: 0 20px;
+        li a{
+            position: relative;
+            margin: 0 15px;
+            padding: 0 10px;
+            text-decoration: none;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        li a:hover {
+            color: #2AD882;
+        }
+
+        li a::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: #2AD882;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: width 0.3s ease;
+        }
+
+        li a:hover::after {
+            width: 100%;
         }
     }
 }
