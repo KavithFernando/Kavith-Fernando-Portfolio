@@ -172,5 +172,10 @@ nav {
         }
     }
 
+    .astro {
+        position: fixed;
+        top: 120px;
+        right: 140px;
+        width: 500px;
     }
 }
