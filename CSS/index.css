@@ -135,6 +135,42 @@ nav {
     /* ------------------------------------------------ */
     .colored-background {
         width: 30%;
-        background-color: #2AD882;
+        background-color: var(--secondary-color);
+
+        .fixed-hexagon {
+            position: fixed;
+            top: 120px;
+            right: 180px;
+            width: 300px;
+            height: 525px;
+            background-color: var(--primary-dark-color);
+            border-top: var(--secondary-color) solid 2px;
+            border-bottom: var(--secondary-color) solid 2px;
+            border-radius: 50px / 15px;
+        }
+
+        .fixed-hexagon::before,
+        .fixed-hexagon::after {
+            content: "";
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background-color: inherit;
+            border-top: inherit;
+            border-bottom: inherit;
+            border-radius: inherit;
+        }
+
+        .fixed-hexagon::before {
+            transform: rotate(-60deg);
+            z-index: -1;
+        }
+
+        .fixed-hexagon::after {
+            transform: rotate(60deg);
+            z-index: -1;
+        }
+    }
+
     }
 }
