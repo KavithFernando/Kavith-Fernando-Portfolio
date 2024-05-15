@@ -1,3 +1,8 @@
+:root {
+    --primary-dark-color: #191d23;
+    --secondary-color: #2AD882;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: auto;
-    background-color: #191d23;
+    background-color: var(--primary-dark-color);
     color: white;
     padding: 20px 7%;
 
@@ -37,14 +42,14 @@ nav {
         }
 
         li a:hover {
-            color: #2AD882;
+            color: var(--secondary-color);
         }
 
         li a::after {
             content: "";
             width: 0;
             height: 2px;
-            background-color: #2AD882;
+            background-color: var(--secondary-color);
             position: absolute;
             left: 0;
             bottom: -10px;
@@ -66,12 +71,12 @@ nav {
     /* ------------------------------------------------ */
     .main-background {
         width: 70%;
-        background-color: #191d23;
+        background-color: var(--primary-dark-color);
 
         /* -------------------------------------------- */
         .welcome-text {
             position: relative;
-            top: 100px;
+            top: 150px;
             left: 200px;
 
             /* ---------------------------------------- */
@@ -80,7 +85,49 @@ nav {
                 font-size: 23px;
                 font-weight: 600;
                 text-transform: capitalize;
-                color: #2AD882;
+                color: var(--secondary-color);
+            }
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-family: Inter;
+                font-size: 70px;
+                font-weight: 800;
+                line-height: 1.1;
+                letter-spacing: 1px;
+                position: relative;
+                top: 20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .profession {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                top: 80px;
+                width: 50%;
+                border: 2px solid var(--secondary-color);
+
+                p {
+                    padding: 5px 20px;
+                    font-size: 32px;
+                    font-weight: normal;
+                    color: #d2d2d2;
+                }
+
+                .arrow {
+                    display: flex;
+                    align-items: center;
+                    background-color: #2AD882;
+
+                    img {
+                        width: 30px;
+                        padding: 10px 13px;
+                    }
+                }
             }
         }
     }
