@@ -77,6 +77,65 @@
                 color: var(--subtext-color);
             }
         }
+
+        .tab-titles {
+            display: flex;
+            width: 50%;
+
+            /* ---------------------------------------- */
+            .tab-title {
+                position: relative;
+                margin: 0 60px 0 0;
+                font-size: 22px;
+                font-family: "Montserrat", sans-serif;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                color: white;
+            }
+
+            .tab-title::after {
+                content: "";
+                width: 0;
+                height: 2px;
+                background-color: var(--secondary-color);
+                left: 0;
+                bottom: -10px;
+                transition: width 0.3s ease;
+                position: absolute;
+            }
+
+            .tab-title.active-title::after {
+                width: 100%;
+            }
+        }
+
+        .tab-content {
+            margin: 5% 0;
+
+            /* ---------------------------------------- */
+            .outer-list {
+                list-style: none;
+
+                /* ------------------------------------ */
+                li {
+                    margin: 0 0 2% 0;
+                    font-size: 17px;
+                    color: var(--special-subtext-color);
+
+                    /* -------------------------------- */
+                    .inner-list {
+                        list-style: disc;
+
+                        /* ---------------------------- */
+                        li {
+                            margin: 1% 2%;
+                            font-size: 14px;
+                            color: var(--subtext-color);
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
