@@ -1,7 +1,8 @@
 :root {
     --primary-dark-color: #191d23;
     --secondary-color: #2AD882;
-    --subtext-color: #c7c7c7;
+    --subtext-color: #C7C7C7;
+    --special-subtext-color: #22A664;
 }
 
 * {
@@ -51,10 +52,10 @@ nav {
             width: 0;
             height: 2px;
             background-color: var(--secondary-color);
-            position: absolute;
             left: 0;
             bottom: -10px;
             transition: width 0.3s ease;
+            position: absolute;
         }
 
         li a:hover::after {

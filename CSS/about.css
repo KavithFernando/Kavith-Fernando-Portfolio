@@ -32,10 +32,11 @@
     }
 
     .about-details {
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 52%;
+        padding: 6% 0;
 
         /* -------------------------------------------- */
         .title {
@@ -67,8 +68,9 @@
             margin: 4% 0;
             width: 80%;
 
+            /* ---------------------------------------- */
             p {
-                font-size: 15px;
+                font-size: 16px;
                 font-family: Inter;
                 word-spacing: 3px;
                 line-height: 25px;
