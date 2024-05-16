@@ -1,6 +1,7 @@
 :root {
     --primary-dark-color: #191d23;
     --secondary-color: #2AD882;
+    --subtext-color: #c7c7c7;
 }
 
 * {
@@ -117,6 +118,10 @@ nav {
                     font-size: 32px;
                     font-weight: normal;
                     color: white;
+                }
+
+                p::before {
+                    content: "computer science";
                 }
 
                 .arrow {

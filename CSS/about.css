@@ -3,20 +3,77 @@
     width: 100%;
     height: 100vh;
     background-color: var(--primary-dark-color);
+    padding: 2% 0;
 
+    /* ------------------------------------------------ */
     .about-image-section {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background-color: red; */
         width: 48%;
         height: 100%;
 
+        /* -------------------------------------------- */
         .about-image {
-            width: 60%;
-            height: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 420px;
+            height: 550px;
             background-color: var(--secondary-color);
             box-shadow: -50px 50px 0 0 white;
+
+            img {
+                width: 90%;
+                height: auto;
+                filter: invert(10%);
+            }
+        }
+    }
+
+    .about-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 52%;
+
+        /* -------------------------------------------- */
+        .title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            /* ---------------------------------------- */
+            h2 {
+                position: relative;
+                width: 40%;
+                font-family: "Montserrat", sans-serif;
+                font-size: 40px;
+                color: white;
+            }
+
+            hr {
+                width: 60%;
+                height: 2px;
+                background-color: var(--secondary-color);
+                border: solid var(--secondary-color) 1px;
+                border-radius: 5px;
+            }
+        }
+
+        .description {
+            margin: 4% 0;
+            width: 80%;
+
+            p {
+                font-size: 15px;
+                font-family: Inter;
+                word-spacing: 3px;
+                line-height: 25px;
+                color: var(--subtext-color);
+            }
         }
     }
 
