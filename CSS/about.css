@@ -111,6 +111,7 @@
         }
 
         .tab-content {
+            display: none;
             margin: 5% 0;
 
             /* ---------------------------------------- */
@@ -147,8 +148,21 @@
             }
         }
 
-        .tab-content {
-            display: none;
+        #skills-list {
+            display: grid;
+            grid-template-columns: 40% 40%;
+
+            li {
+                margin: 0 0 5% 0;
+
+                .inner-list {
+                    li {
+                        margin: 2.4% 5%;
+                    }
+                }
+                
+            }
+            
         }
 
         .tab-content.active-content {
