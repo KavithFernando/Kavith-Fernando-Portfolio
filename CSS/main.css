@@ -94,7 +94,7 @@ nav {
         }
 
         .theme-switch:hover {
-            animation: bounce 2s infinite;
+            animation: bounce 1.5s infinite;
         }        
     }
 }
