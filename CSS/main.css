@@ -1,6 +1,7 @@
 :root {
-    --primary-dark-color: #191d23;
+    --primary-color: #191d23;
     --secondary-color: #2AD882;
+    --primary-text-color: #FFFFFF;
     --subtext-color: #d7d7d7;
     --special-subtext-color: #22A664;
 }
@@ -14,10 +15,11 @@
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: auto;
-    background-color: var(--primary-dark-color);
-    color: white;
-    padding: 20px 7%;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    padding: 18px 2% 18px 7%;
 
     /* ------------------------------------------------ */
     h3 {
@@ -36,10 +38,11 @@ nav {
             position: relative;
             margin: 0 15px;
             padding: 0 10px;
+            font-size: 16px;
             text-decoration: none;
             text-transform: capitalize;
             letter-spacing: 1px;
-            color: white;
+            color: var(--primary-text-color);
             transition: 0.3s;
         }
 
@@ -61,6 +64,35 @@ nav {
         li a:hover::after {
             width: 100%;
         }
+
+        .theme-switch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            margin-left: 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.5s ease;
+
+            .theme-buttons {
+                width: 20px;
+                height: 20px;
+            }
+
+            #light {
+                display: block;
+            }
+    
+            #dark {
+                display: none;
+            }            
+        }
+
+        .theme-switch:hover {
+            animation: bounce 2s infinite;
+        }        
     }
 }
 
@@ -68,12 +100,12 @@ nav {
     display: flex;
     width: 100%;
     height: 90vh;
-    color: white;
+    color: var(--primary-text-color);
 
     /* ------------------------------------------------ */
     .main-background {
         width: 70%;
-        background-color: var(--primary-dark-color);
+        background-color: var(--primary-color);
         z-index: -3;
 
         /* -------------------------------------------- */
@@ -118,7 +150,7 @@ nav {
                     padding: 5px 20px;
                     font-size: 32px;
                     font-weight: normal;
-                    color: white;
+                    color: var(--primary-text-color);
                 }
 
                 p::before {
@@ -151,7 +183,7 @@ nav {
             right: 12vw;
             width: 20vw;
             height: 35vw;
-            background-color: var(--primary-dark-color);
+            background-color: var(--primary-color);
             border-radius: 50px / 15px;
             z-index: -2;
         }
@@ -184,5 +216,18 @@ nav {
         width: 600px;
         filter: drop-shadow(5px 5px 10px var(--secondary-color));
         z-index: -1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+      background-color: var(--special-subtext-color);
+    }
+    100% {
+      transform: scale(1);
     }
 }
