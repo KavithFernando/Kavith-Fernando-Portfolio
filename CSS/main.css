@@ -1,9 +1,11 @@
 :root {
-    --primary-color: #191d23;
+    --primary-color: #191D23;
     --secondary-color: #2AD882;
     --primary-text-color: #FFFFFF;
-    --subtext-color: #d7d7d7;
-    --special-subtext-color: #22A664;
+    --subtext-color: #D7D7D7;
+    --special-subtext-color: #24ad68;
+
+    --astro-brightness-level: 100%;
 }
 
 * {
@@ -39,6 +41,7 @@ nav {
             margin: 0 15px;
             padding: 0 10px;
             font-size: 16px;
+            font-weight: bold;
             text-decoration: none;
             text-transform: capitalize;
             letter-spacing: 1px;
@@ -47,14 +50,14 @@ nav {
         }
 
         li a:hover {
-            color: var(--secondary-color);
+            color: var(--special-subtext-color);
         }
 
         li a::after {
             content: "";
             width: 0;
             height: 2px;
-            background-color: var(--secondary-color);
+            background-color: var(--special-subtext-color);
             left: 0;
             bottom: -10px;
             transition: width 0.3s ease;
@@ -120,7 +123,7 @@ nav {
                 font-size: 23px;
                 font-weight: 600;
                 text-transform: capitalize;
-                color: var(--secondary-color);
+                color: var(--special-subtext-color);
             }
 
             h2 {
@@ -160,7 +163,7 @@ nav {
                 .arrow {
                     display: flex;
                     align-items: center;
-                    background-color: #2AD882;
+                    background-color: var(--secondary-color);
 
                     img {
                         width: 30px;
@@ -209,12 +212,16 @@ nav {
         }
     }
 
-    .astro {
+    #astro {
         position: fixed;
         top: 8vh;
         right: 10vw;
         width: 600px;
-        filter: drop-shadow(5px 5px 10px var(--secondary-color));
+        fill: black;
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(5px 5px 10px var(--secondary-color))
+        ;
         z-index: -1;
     }
 }

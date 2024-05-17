@@ -123,7 +123,7 @@
                     margin: 0 0 2% 0;
                     font-size: 17px;
                     text-transform: capitalize;
-                    color: var(--secondary-color);
+                    color: var(--special-subtext-color);
 
                     /* -------------------------------- */
                     .inner-list {
