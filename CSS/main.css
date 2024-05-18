@@ -225,6 +225,7 @@ nav {
         drop-shadow(5px 5px 10px var(--secondary-color))
         ;
         z-index: -1;
+        animation: glow 2s infinite linear;
     }
 }
 
@@ -238,5 +239,62 @@ nav {
     }
     100% {
       transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(5px 5px 5px var(--secondary-color))
+        ;
+    }
+    12.5% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(0 7px 5px var(--secondary-color))
+        ;
+    }
+    25% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(-5px 5px 5px var(--secondary-color))
+        ;
+    }
+    37.5% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(-7px 0 5px var(--secondary-color))
+        ;
+    }
+    50% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(-5px -5px 5px var(--secondary-color))
+        ;
+    }
+    62.5% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(0 -7px 5px var(--secondary-color))
+        ;
+    }
+    75% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(5px -5px 5px var(--secondary-color))
+        ;
+    }
+    87.5% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(7px 0 5px var(--secondary-color))
+        ;
+    }
+    100% {
+        filter: 
+        brightness(var(--astro-brightness-level))
+        drop-shadow(5px 5px 5px var(--secondary-color))
+        ;
     }
 }
