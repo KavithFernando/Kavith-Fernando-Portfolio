@@ -1,11 +1,13 @@
 :root {
     --primary-color: #191D23;
+    --tab-color: #2A303A;
     --secondary-color: #2AD882;
     --primary-text-color: #FFFFFF;
     --subtext-color: #D7D7D7;
-    --special-subtext-color: #24ad68;
+    --special-subtext-color: #24AD68;
 
     --astro-brightness-level: 100%;
+    --service-icons-invert-level: 0%;
 }
 
 * {
