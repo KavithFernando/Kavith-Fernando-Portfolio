@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     background-color: var(--primary-color);
-    padding: 2% 0;
+    padding: 8% 0 0 0;
 
     /* ------------------------------------------------ */
     .about-image-section {
@@ -36,7 +36,6 @@
         display: flex;
         flex-direction: column;
         width: 52%;
-        padding: 6% 0;
 
         /* -------------------------------------------- */
         .title {
@@ -49,14 +48,13 @@
             /* ---------------------------------------- */
             h2 {
                 position: relative;
-                width: 40%;
                 font-family: "Montserrat", sans-serif;
                 font-size: 40px;
                 color: var(--primary-text-color);
             }
 
             hr {
-                width: 60%;
+                width: 53%;
                 height: 2px;
                 background-color: var(--secondary-color);
                 border: solid var(--secondary-color) 1px;
